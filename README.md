@@ -15,4 +15,5 @@ with
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
  
- 
+ 2018.01.09 Question
+ https://github.com/wmonk/create-react-app-typescript/issues/3
