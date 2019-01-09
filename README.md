@@ -17,3 +17,4 @@ import { Dispatch } from 'redux';
  
  2018.01.09 Question
  https://github.com/wmonk/create-react-app-typescript/issues/3
+ https://www.typescriptlang.org/docs/handbook/jsx.html
