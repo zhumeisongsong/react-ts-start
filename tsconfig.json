@@ -7,7 +7,7 @@
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true, // Allow JavaScript files to be compiled.
+    "allowJs": false, // Allow JavaScript files to be compiled.
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -21,7 +21,8 @@
     "jsx": "preserve",
     "sourceMap": true,
     "strictNullChecks": true,
-    ""
+    "noImplicitAny": true,
+    "watch": "default"
   },
   "include": [
     "src"
