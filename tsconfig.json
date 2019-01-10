@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
+    "outDir": "build/dist",
     "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
+    "allowJs": true, // Allow JavaScript files to be compiled.
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -17,7 +18,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    ""
   },
   "include": [
     "src"
