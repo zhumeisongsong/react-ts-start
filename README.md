@@ -41,3 +41,6 @@ https://medium.com/@pongsatt/how-to-use-redux-in-typescript-ad0b5fe77933
 bad demo: 
 https://github.com/Microsoft/TypeScript-React-Starter/blob/master/src/App.tsx
 
+10. Define redux action creator in “src/store/demo/actions.ts”
+
+
