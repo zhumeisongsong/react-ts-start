@@ -1,17 +1,16 @@
 {
   "compilerOptions": {
-    "outDir": "build/dist",
     "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
-    ],
-    // Allow JavaScript files to be compiled.
+    ], // Allow JavaScript files to be compiled.
     "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "strict": true,
     // Disallow inconsistently-cased references to the same file.
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
@@ -28,11 +27,12 @@
     // Remove all comments except beginning with /*!
     "removeComments": true,
     // Enables experimental support for ES decorators.
-    "experimentalDecorators": true,
-    "strict": true,
-    "watch": true
+    "experimentalDecorators": true
   },
+  "exclude": [
+    "node_modules"
+  ],
   "include": [
-    "src"
+    "src",
   ]
 }
