@@ -2,20 +2,23 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './App.scss';
 import { IRootState } from './store';
+
 import { Dispatch } from 'redux';
 import * as actions from './actions/';
 import { DemoActions } from './constants/Actiontypes';
 
+import * as asyncActions from './actions/async-actions'
+
 
 const mapStateToProps = ({demo}: IRootState) => {
-  const {list} = demo;
-  return {list};
+  const {list, loading} = demo;
+  return {list, loading};
 }
 
 const mapDispatcherToProps = (dispatch: Dispatch<DemoActions>) => {
   return {
     addItem: (item: string) =>
-    dispatch(actions.addItemToList(item))
+      asyncActions.addItemAsync(dispatch, item)
   }
 }
 
@@ -38,11 +41,13 @@ class App extends Component<ReduxType> {
   }
 
   public render() {
-    const {list} = this.props;
+    const {list, loading} = this.props;
     return (
       <div className="app">
         <input value={this.state.inputText} onChange={this.onInputChange} />
         <button onClick={this.onAddClick}>Add</button>
+        {loading&&
+        <div>Loading...</div>}
         <ul>
           {list.map(l => <li key={l}>{l}</li>)}
         </ul>

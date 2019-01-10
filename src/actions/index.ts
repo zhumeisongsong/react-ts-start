@@ -7,3 +7,8 @@ export function addItemToList(item: string) {
   });
 }
 
+export function setLoading(loading: boolean) {
+  return action(Constants.SET_LOADING, {
+    loading
+  });
+}
