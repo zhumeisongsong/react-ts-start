@@ -7,11 +7,12 @@
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": false, // Allow JavaScript files to be compiled.
+    // Allow JavaScript files to be compiled.
+    "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
+    // Disallow inconsistently-cased references to the same file.
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -22,7 +23,14 @@
     "sourceMap": true,
     "strictNullChecks": true,
     "noImplicitAny": true,
-    "watch": "default"
+    // Report error when not all code paths in function return a value.
+    "noImplicitReturns": true,
+    // Remove all comments except beginning with /*!
+    "removeComments": true,
+    // Enables experimental support for ES decorators.
+    "experimentalDecorators": true,
+    "strict": true,
+    "watch": true
   },
   "include": [
     "src"

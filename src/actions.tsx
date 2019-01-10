@@ -1,4 +1,4 @@
-import * as constants from '../constants';
+import * as constants from './constants';
 
 export interface IncrementEnthusiasm {
   type: constants.INCREMENT_ENTHUSIASM;
@@ -7,10 +7,9 @@ export interface IncrementEnthusiasm {
 export interface DecrementEnthusiasm {
   type: constants.DECREMENT_ENTHUSIASM;
 }
-
 export type EnthusiasmAction = IncrementEnthusiasm | DecrementEnthusiasm;
 
-// TODO: check ts duc for this
+// TODO: check ts doc for this
 export function incrementEnthusiasm(): IncrementEnthusiasm {
   return {
     type: constants.INCREMENT_ENTHUSIASM

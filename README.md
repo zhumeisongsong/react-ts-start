@@ -25,6 +25,10 @@ https://www.typescriptlang.org/docs/handbook/jsx.html
 
 https://www.typescriptlang.org/docs/handbook/compiler-options.html
 
+Configuring directory watching using environment variable TSC_WATCHDIRECTORY
+The watching of directory on platforms that dont support recursive directory watching natively in node, is supported through recursively creating directory watcher for the child directories using different options selected by TSC_WATCHDIRECTORY. Note that on platforms that support native recursive directory watching (e.g windows) the value of this environment variable is ignored.
+
+
 ### References
 https://facebook.github.io/create-react-app/docs/adding-typescript
 
