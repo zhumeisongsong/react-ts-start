@@ -1,6 +1,6 @@
 import { Dispatch } from 'redux';
 import * as actions from '../actions';
-import { DemoActions } from '../constants/Actiontypes';
+import { DemoActions } from '../constants/types';
 
 function sleep(timeout: number) {
   return new Promise((resolve) =>

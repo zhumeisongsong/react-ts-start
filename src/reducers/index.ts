@@ -1,4 +1,4 @@
-import { Constants, DemoActions, IDemoState } from '../constants/Actiontypes';
+import { Constants, DemoActions, IDemoState } from '../constants/types';
 
 const init: IDemoState = {
   list: [],

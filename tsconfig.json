@@ -23,7 +23,9 @@
     // Remove all comments except beginning with /*!
     "removeComments": true,
     // Enables experimental support for ES decorators.
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    // Raise error on this expressions with an implied any type.
+    "noImplicitThis": true
   },
   "exclude": [
     "node_modules"

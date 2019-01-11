@@ -33,6 +33,7 @@ The watching of directory on platforms that dont support recursive directory wat
      "include": [
         "src"
       ]
+### Ts nameSpaces haven't supported by react      
       
 ### References
 https://facebook.github.io/create-react-app/docs/adding-typescript
@@ -43,6 +44,6 @@ https://developer.github.com/v3/#rate-limiting
 bad demo: 
 https://github.com/Microsoft/TypeScript-React-Starter/blob/master/src/App.tsx
 
-10. Define redux action creator in “src/store/demo/actions.ts”
+
 
 

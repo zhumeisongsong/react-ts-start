@@ -1,5 +1,5 @@
 import { action } from 'typesafe-actions';
-import { Constants } from '../constants/Actiontypes';
+import { Constants } from '../constants/types';
 
 export function addItemToList(item: string) {
   return action(Constants.ADD_ITEM, {
