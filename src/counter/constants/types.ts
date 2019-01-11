@@ -2,7 +2,7 @@ export interface CounterState {
   count: number
 }
 
-export enum COntants {
+export enum Constants {
   INCREMENT = 'INCREMENT',
   DECREMENT = 'DECREMENT'
 }
