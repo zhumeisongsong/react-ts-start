@@ -37,6 +37,7 @@ The watching of directory on platforms that dont support recursive directory wat
 ### References
 https://facebook.github.io/create-react-app/docs/adding-typescript
 https://medium.com/@pongsatt/how-to-use-redux-in-typescript-ad0b5fe77933
+https://medium.com/front-end-weekly/build-a-realtime-pwa-with-react-99e7b0fd3270
 
 bad demo: 
 https://github.com/Microsoft/TypeScript-React-Starter/blob/master/src/App.tsx
