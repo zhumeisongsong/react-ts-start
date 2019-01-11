@@ -24,7 +24,7 @@
     "removeComments": true,
     // Enables experimental support for ES decorators.
     "experimentalDecorators": true,
-    // Raise error on this expressions with an implied any type.
+    //
     "noImplicitThis": true
   },
   "exclude": [

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './Demo.scss';
-import { IRootState } from '../demo/store';
+import { IRootState } from '../store';
 
 import { Dispatch } from 'redux';
 import { DemoActions } from '../demo/constants/types';
 
-import * as asyncActions from '../demo/actions/async-actions'
+import * as asyncActions from '../demo/actions/async-actions';
 
 const mapStateToProps = ({demo}: IRootState) => {
   const {list, loading} = demo;
