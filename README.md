@@ -38,6 +38,7 @@ The watching of directory on platforms that dont support recursive directory wat
 ### References
 https://facebook.github.io/create-react-app/docs/adding-typescript
 https://medium.com/@pongsatt/how-to-use-redux-in-typescript-ad0b5fe77933
+https://github.com/pongsatt/redux-ts-demo/blob/master/src/store/demo/reducer.ts
 https://medium.com/front-end-weekly/build-a-realtime-pwa-with-react-99e7b0fd3270
 https://developer.github.com/v3/#rate-limiting
 
