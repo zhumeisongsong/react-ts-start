@@ -1,5 +1,5 @@
 import { Dispatch } from 'redux';
-import * as actions from '../actions';
+import * as actions from './';
 import { DemoActions } from '../constants/types';
 
 function sleep(timeout: number) {
