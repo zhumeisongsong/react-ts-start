@@ -8,7 +8,6 @@ import { DemoActions } from '../demo/constants/types';
 
 import * as asyncActions from '../demo/actions/async-actions'
 
-
 const mapStateToProps = ({demo}: IRootState) => {
   const {list, loading} = demo;
   return {list, loading};
@@ -27,7 +26,7 @@ interface IState {
   inputText: string
 }
 
-class App extends Component<ReduxType> {
+class Demo extends Component<ReduxType> {
   public state: IState = {inputText: ''};
 
   public onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -55,4 +54,4 @@ class App extends Component<ReduxType> {
   }
 }
 
-export default connect(mapStateToProps, mapDispatcherToProps)(App);
+export default connect(mapStateToProps, mapDispatcherToProps)(Demo);

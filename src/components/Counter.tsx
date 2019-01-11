@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
-class Counter extends Component {
-  public incrementIfOdd() {
+class Counter extends Component<ReduxType> {
+  public incrementIfOdd = () => {
+
 
   }
 
-  public incrementAsync() {
+  public incrementAsync = () => {
 
   }
 
@@ -19,9 +20,9 @@ class Counter extends Component {
         <button onClick={this.incrementIfOdd}>Increment if odd</button>
         <button onClick={this.incrementAsync}>Increment async</button>
       </div>
-    )
+    );
   }
 }
 
-export default Counter
+export default Counter;
 
