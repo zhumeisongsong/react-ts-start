@@ -6,19 +6,30 @@
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
+    // Allow JavaScript files to be compiled.
+    "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    // Remove all comments except beginning with /*!
+    "removeComments": true,
+    // Enables experimental support for ES decorators.
+    "experimentalDecorators": true,
+    //
+    "noImplicitThis": true
   },
+  "exclude": [
+    "node_modules"
+  ],
   "include": [
     "src"
   ]
