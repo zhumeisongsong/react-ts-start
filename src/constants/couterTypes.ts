@@ -1,5 +1,5 @@
 import { ActionType } from 'typesafe-actions';
-import * as actions from '../actions/index';
+import * as actions from '../actions/couter';
 
 export type CounterActions = ActionType<typeof actions>;
 

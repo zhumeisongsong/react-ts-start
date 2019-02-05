@@ -1,14 +1,15 @@
-import { Constants, DemoActions, IDemoState } from '../constants/types';
+import { Constants, TodoActions, TodoState } from '../constants/todoTypes';
 
-const init: IDemoState = {
+const init: TodoState = {
   list: [],
   loading: false
 }
 
-export function demoReducer(state: IDemoState = init, action: DemoActions): IDemoState {
+export function todoReducer(state: TodoState = init, action: TodoActions): TodoState {
   switch (action.type) {
     case Constants.ADD_ITEM:
       return {...state, list: [...state.list, action.payload.item]};
+
     case Constants.SET_LOADING:
       return {...state, ...action.payload};
     default:

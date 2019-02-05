@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { IRootState } from '../store';
-
 import { Dispatch } from 'redux';
-import { CounterActions } from '../counter/constants/types';
+import { connect } from 'react-redux';
 
-import * as actions from '../counter/actions/'
+import { RootState } from '../store';
+import { CounterActions } from '../constants/couterTypes';
+import * as actions from '../actions/couter';
 
-const mapStateToProps = ({counter}: IRootState) => {
+const mapStateToProps = ({counter}: RootState) => {
   const {count} = counter;
   return {count};
-
 }
 
 const mapDispatcherToProps = (dispatch: Dispatch<CounterActions>) => {

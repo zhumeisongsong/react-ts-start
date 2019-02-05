@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import './Demo.scss';
-import { IRootState } from '../store';
+import './Todo.scss';
 
+import { RootState } from '../store';
 import { Dispatch } from 'redux';
-import { DemoActions } from '../demo/constants/types';
+import { TodoActions } from '../constants/todoTypes';
+import { addItemAsync } from '../actions/todo';
 
-import * as asyncActions from '../demo/actions/async-actions';
-
-const mapStateToProps = ({demo}: IRootState) => {
-  const {list, loading} = demo;
+const mapStateToProps = ({todo}: RootState) => {
+  const {list, loading} = todo;
   return {list, loading};
 }
 
-const mapDispatcherToProps = (dispatch: Dispatch<DemoActions>) => {
+const mapDispatcherToProps = (dispatch: Dispatch<TodoActions>) => {
   return {
     addItem: (item: string) =>
-      asyncActions.addItemAsync(dispatch, item)
+      addItemAsync(dispatch, item)
   }
 }
 
@@ -26,8 +25,10 @@ interface IState {
   inputText: string
 }
 
-class Demo extends Component<ReduxType> {
-  public state: IState = {inputText: ''};
+class Todo extends Component<ReduxType> {
+  public state: IState = {
+    inputText: ''
+  };
 
   public onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     this.setState({inputText: e.target.value});
@@ -42,7 +43,7 @@ class Demo extends Component<ReduxType> {
     const {list, loading} = this.props;
     return (
       <div className="app">
-        <input value={this.state.inputText} onChange={this.onInputChange} />
+        <input value={this.state.inputText} onChange={this.onInputChange}/>
         <button onClick={this.onAddClick}>Add</button>
         {loading &&
         <div>Loading...</div>}
@@ -54,4 +55,4 @@ class Demo extends Component<ReduxType> {
   }
 }
 
-export default connect(mapStateToProps, mapDispatcherToProps)(Demo);
+export default connect(mapStateToProps, mapDispatcherToProps)(Todo);

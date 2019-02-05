@@ -1,19 +1,19 @@
 import { combineReducers, createStore } from 'redux';
 
-import { demoReducer } from '../demo/reducers';
-import { IDemoState } from '../demo/constants/types';
+import { todoReducer } from '../reducers/todo';
+import { TodoState } from '../constants/todoTypes';
 
-import counterReducer from '../counter/reducers';
-import { CounterState } from '../counter/constants/types';
+import counterReducer from '../reducers/couter';
+import { CounterState } from '../constants/couterTypes';
 
-export interface IRootState {
-  demo: IDemoState
-  counter: CounterState
+export interface RootState {
+  todo: TodoState,
+  counter: CounterState,
 }
 
-const store = createStore<IRootState, any, any, any>(
+const store = createStore<RootState, any, any, any>(
   combineReducers({
-    demo: demoReducer,
+    todo: todoReducer,
     counter: counterReducer
   })
 );
